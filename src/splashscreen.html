@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        overflow: hidden;
+        user-select: none;
+        -webkit-app-region: drag;
+        margin: 0px;
+        padding: 0px;
+      }
+      html {
+        height: 100%;
+        /* border: 4px solid #2B2F38; */
+      }
+      body {
+        height: 100%;
+        /* background-color: #5c6478; */
+        /* background-color: #2B2F38; */
+        /* background-color: #d8dbdf; */
+        text-align: center;
+      }
+      .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img.logo {
+        flex-grow: 1;
+        pointer-events: none;
+        padding: 0 20px;
+        /* filter: drop-shadow(0 0 4px #5cc9fb33); */
+        filter: drop-shadow(0 0 4px #ffffff33);
+      }
+      .text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+          'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        font-weight: 600;
+        font-size: 2rem;
+        color: #03a9f4;
+        padding: 30px 0;
+        text-shadow: 0px 0px 20px #5cc9fb;
+        animation: glow 1s ease-in-out infinite;
+      }
+
+      @keyframes glow {
+        50% {
+          text-shadow: 0px 0px 18px #5cc9fb;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="./assets/logo_animated.svg"
+        width="300"
+        draggable="false"
+      />
+    </div>
+    <!-- <div class="text">Loading Mockoon</div> -->
+  </body>
+</html>
